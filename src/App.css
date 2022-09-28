@@ -120,7 +120,7 @@ nav li a:hover {
 	color: var(--main-color-alt);
 }
 .go-down {
-	color: var(--main-color);
+	color: var(--main-color-alt);
 	position: absolute;
 	transition: var(--main-transition-duration);
 	font-size: 30px;
@@ -128,7 +128,25 @@ nav li a:hover {
 	margin-top: 20px;
 }
 .go-down:hover {
-	color: var(--main-color-alt);
+	color: var(--main-color);
+}
+/* Start Applications */
+.applications {
+	padding-top: 50px;
+}
+.applications .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 20px;
+}
+.applications .card {
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 4px;
 }
 
 /* Start Animation */
