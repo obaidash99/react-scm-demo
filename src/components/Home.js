@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
 	return (
@@ -17,6 +19,9 @@ const Home = () => {
 						هذا التدريب يسلط الضوء على التحديات الرقمية الحالية والحلول المتوفرة والمقترحة
 						من قبل القسم التقني
 					</h2>
+					<Link to="/applications">
+						<FontAwesomeIcon icon="fa-solid fa-angles-down" className="go-down" />
+					</Link>
 				</div>
 			</div>
 		</div>
