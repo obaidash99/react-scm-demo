@@ -15,17 +15,21 @@ import mailvelope from '../assets/mailvelope.png';
 import workspace from '../assets/workspace.png';
 import other from '../assets/other.png';
 
+import VMware from '../components/VMware.jsx';
+
 const Applications = () => {
 	return (
 		<div className="applications" id="applications" dir="rtl">
 			<div className="container">
 				<h2>التطبيقات المستخدمة</h2>
 				<div className="content">
-					<div className="card">
-						<h4>VMware - في ام وير</h4>
-						<img src={vmware} alt="vmware" />
-						<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
-					</div>
+					<Link to="/applicaions/VMware">
+						<div className="card">
+							<h4>VMware - في ام وير</h4>
+							<img src={vmware} alt="vmware" />
+							<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>East Smart Security - إيست سيكيوريتي</h4>
 						<img src={eset} alt="eset" />
