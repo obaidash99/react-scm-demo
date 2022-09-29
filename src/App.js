@@ -24,7 +24,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/applications" element={<Applications />} />
-						<Route apth="/applications/VMware" element={<VMware />}></Route>
+						<Route apth="/applications/VMware" element={<VMware />} />
 					</Routes>
 				</div>
 			</Router>

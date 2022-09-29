@@ -23,7 +23,7 @@ const Applications = () => {
 			<div className="container">
 				<h2>التطبيقات المستخدمة</h2>
 				<div className="content">
-					<Link to="/applicaions/VMware">
+					<Link to="/applications/VMware">
 						<div className="card">
 							<h4>VMware - في ام وير</h4>
 							<img src={vmware} alt="vmware" />
