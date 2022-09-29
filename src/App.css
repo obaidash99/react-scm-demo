@@ -189,21 +189,23 @@ nav li a:hover {
 	border: 2px solid var(--main-color-alt);
 	border-radius: 6px;
 	transition: var(--main-transition-duration);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #eee;
 }
 .applications .card:hover {
 	transform: scale(1.1);
 }
 .applications .card h4 {
 	color: var(--main-color-alt);
+	margin-bottom: 20px;
 }
-
-/* Responsive Home */
-/* @media (mex-width: 991px) {
-	.applications .content {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
-} */
+.applications p {
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
 
 /* Start Animation */
 @keyframes bouncing {

@@ -11,7 +11,7 @@ import eraser from '../assets/eraser.png';
 import zoom from '../assets/zoom.png';
 import jitsi from '../assets/jitsi.png';
 import nordvpn from '../assets/nordvpn.png';
-import mailvelope from '../assets/mailvelope.jpg';
+import mailvelope from '../assets/mailvelope.png';
 import workspace from '../assets/workspace.png';
 import other from '../assets/other.png';
 
