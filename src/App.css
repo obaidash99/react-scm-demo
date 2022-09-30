@@ -222,3 +222,25 @@ nav li a:hover {
 		transform: translateY(-15px);
 	}
 }
+
+/* Each App */
+.main {
+	padding-top: 50px;
+	text-align: center;
+}
+.main .content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.main .info {
+	text-align: right;
+}
+.main .info p {
+	margin-top: 10px;
+}
+.main .info span {
+	font-weight: bold;
+	color: var(--main-color);
+}

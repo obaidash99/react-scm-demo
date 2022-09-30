@@ -15,11 +15,9 @@ import mailvelope from '../assets/mailvelope.png';
 import workspace from '../assets/workspace.png';
 import other from '../assets/other.png';
 
-import VMware from '../components/VMware.jsx';
-
 const Applications = () => {
 	return (
-		<div className="applications" id="applications" dir="rtl">
+		<div className="applications" id="applications">
 			<div className="container">
 				<h2>التطبيقات المستخدمة</h2>
 				<div className="content">
@@ -30,16 +28,20 @@ const Applications = () => {
 							<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>East Smart Security - إيست سيكيوريتي</h4>
-						<img src={eset} alt="eset" />
-						<p>الحماية من الفيروسات وتشفير البيانات</p>
-					</div>
-					<div className="card">
-						<h4>VeraCrypt - فيراكربت</h4>
-						<img src={veraCrypt} alt="veracrypt" />
-						<p>تشفير البيانات محلياَ</p>
-					</div>
+					<Link to="/applications/Eset">
+						<div className="card">
+							<h4>East Smart Security - إيست سيكيوريتي</h4>
+							<img src={eset} alt="eset" />
+							<p>الحماية من الفيروسات وتشفير البيانات</p>
+						</div>
+					</Link>
+					<Link to="/applications/Veracrypt">
+						<div className="card">
+							<h4>VeraCrypt - فيراكربت</h4>
+							<img src={veraCrypt} alt="veracrypt" />
+							<p>تشفير البيانات محلياَ</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>Eraser - ايرسير </h4>
 						<img src={eraser} alt="eraser" />
