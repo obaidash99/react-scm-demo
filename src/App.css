@@ -225,22 +225,45 @@ nav li a:hover {
 
 /* Each App */
 .main {
+	text-align: center;
 	padding-top: 50px;
+}
+.main h1 {
 	text-align: center;
 }
 .main .content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 20px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	gap: 30px;
 }
-.main .info {
+.content div {
+	flex: 1;
+}
+.content .info {
 	text-align: right;
 }
-.main .info p {
+.content .info p {
 	margin-top: 10px;
 }
-.main .info span {
+.content .info span {
 	font-weight: bold;
 	color: var(--main-color);
+}
+.content .image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content .image img {
+	width: 90%;
+}
+.content .how h3 {
+	font-size: 20px;
+	color: var(--main-color);
+}
+.content .how p {
+	line-height: 2;
 }
