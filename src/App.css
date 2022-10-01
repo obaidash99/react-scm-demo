@@ -144,7 +144,7 @@ nav li a:hover {
 	transition: var(--main-transition-duration);
 	font-size: 30px;
 	animation: bouncing 1.5s infinite;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .go-down:hover {
 	color: var(--main-color);
@@ -248,7 +248,8 @@ nav li a:hover {
 .main p,
 .main q {
 	line-height: 2;
-	margin-top: 10px;
+	margin-top: 8px;
+	display: block;
 }
 .main .info ul li {
 	margin-top: 5px;
