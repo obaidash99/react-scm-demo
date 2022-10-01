@@ -60,7 +60,7 @@ nav {
 	background-color: #fff;
 }
 nav ul li {
-	/* display: inline-block; */
+	display: inline-block;
 	margin-right: 50px;
 }
 nav li a {
@@ -271,7 +271,7 @@ nav li a:hover {
 	width: 90%;
 }
 .main h3 {
-	font-size: 20px;
+	font-size: 25px;
 	color: var(--main-color);
 	margin: 20px 0 0;
 }
@@ -294,4 +294,30 @@ nav li a:hover {
 		width: 90%;
 		margin: auto;
 	}
+}
+
+/* Start Instructions */
+.instructions ul {
+	list-style: number;
+	width: fit-content;
+	margin: auto;
+	font-size: 22px;
+	text-align: right;
+}
+.instructions .child-list {
+	list-style: none;
+	font-size: 19px;
+}
+.instructions .child-list li {
+	margin-top: 8px;
+}
+.child-list span a {
+	color: var(--main-color-alt);
+	transition: var(--main-transition-duration);
+}
+.child-list span a:hover {
+	background-color: var(--main-color-alt);
+	color: white;
+	border-radius: 6px;
+	padding: 0 3px;
 }

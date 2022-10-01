@@ -65,6 +65,51 @@ const Veracrypt = () => {
 					</p>
 				</div>
 			</div>
+			<div className="container instructions">
+				<div className="intro">
+					<h3>يتكون هذا الدليل من ثلاثة أقسام رئيسية :</h3>
+					<ul>
+						<li>
+							<a href="#installing">تنصيب برنامج فيرا كريبت</a>
+						</li>
+						<li>
+							<a href="#creating">إنشاء حافظة\مجلد مشفر</a>
+						</li>
+						<li>
+							<a href="#incrypting">تشفير الملفات والمجلدات </a>
+						</li>
+					</ul>
+				</div>
+				<div className="installing" id="installing">
+					<h3>تنصيب برنامج فيرا كريبت</h3>
+					<ul className="main-list">
+						<li>
+							الحصول على التطبيق:
+							<ul className="child-list">
+								<li>
+									ﻷجهزة ويندوز من{' '}
+									<span>
+										<a href="https://launchpad.net/veracrypt/trunk/1.21/+download/VeraCrypt%20Setup%201.21.exe ">
+											هنا
+										</a>
+									</span>
+								</li>
+								<li>
+									ﻷجهزة ماك من{' '}
+									<span>
+										<a href="https://launchpad.net/veracrypt/trunk/1.21/+download/VeraCrypt_1.21.dmg ">
+											هنا
+										</a>
+									</span>
+								</li>
+								<li>بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div className="creating" id="creating"></div>
+				<div className="incrypting" id="incrypting"></div>
+			</div>
 		</div>
 	);
 };
