@@ -3,6 +3,31 @@ import logo from '../assets/veracrypt.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import one from '../assets/veraCryptImgs/img1-1.jpg';
+import two from '../assets/veraCryptImgs/img1-2.jpg';
+import three from '../assets/veraCryptImgs/img1-3.jpg';
+import four from '../assets/veraCryptImgs/img1-4.jpg';
+import five from '../assets/veraCryptImgs/img1-5.jpg';
+import six from '../assets/veraCryptImgs/img1-33.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+// import one from '../assets/veraCryptImgs/img1-1.jpg';
+
 const Veracrypt = () => {
 	return (
 		<div className="main">
@@ -102,8 +127,28 @@ const Veracrypt = () => {
 										</a>
 									</span>
 								</li>
-								<li>بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية</li>
+								<li>
+									بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية
+									<img src={one} alt="one" />
+								</li>
 							</ul>
+						</li>
+						<li> نضغط على المربع بجانب عبارة "I accept the license" لتظهر اشارة [㇢]</li>
+						<li>نضغط على "Next"</li>
+						<li>
+							نختار "Install" <br />
+							<img src={three} alt="three" />
+						</li>
+						<li>
+							نضغط على "Next" <br />
+							<img src={two} alt="two" /> <br />
+							بعدها تبدأ عملية التنصيب <br />
+							<img src={six} alt="seven" />
+						</li>
+						<li>
+							عند الإنتهاء، تظهر الرسالة التالية، وتعني بأنه تم تنصيب البرنامج <br />
+							نضغط على "OK" <br />
+							<img src={four} alt="four" />
 						</li>
 					</ul>
 				</div>
