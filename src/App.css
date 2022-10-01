@@ -321,3 +321,12 @@ nav li a:hover {
 	border-radius: 6px;
 	padding: 0 3px;
 }
+.instructions img {
+	width: 700px;
+}
+/* Instructions Responsive */
+@media screen and (max-width: 767px) {
+	.instructions img {
+		width: 350px;
+	}
+}

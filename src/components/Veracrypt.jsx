@@ -158,7 +158,7 @@ const Veracrypt = () => {
 							الخيار "Donate now" هو للتبرع للقائمات والقائمين على إعداد التطبيق
 							<br />
 						</li>
-						<li>نضغط على خيار "Finish"ﻹنهاء الإعداد</li>
+						<li>نضغط على خيار "Finish" ﻹنهاء الإعداد</li>
 					</ul>
 				</div>
 				<div className="creating" id="creating"></div>
