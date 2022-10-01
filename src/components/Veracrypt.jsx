@@ -137,7 +137,6 @@ const Veracrypt = () => {
 						<li>نضغط على "Next"</li>
 						<li>
 							نختار "Install" <br />
-							<img src={three} alt="three" />
 						</li>
 						<li>
 							نضغط على "Next" <br />
@@ -146,10 +145,20 @@ const Veracrypt = () => {
 							<img src={six} alt="seven" />
 						</li>
 						<li>
+							نضغط على خيار "Install"
+							<br />
+							<img src={three} alt="three" />
+						</li>
+						<li>
 							عند الإنتهاء، تظهر الرسالة التالية، وتعني بأنه تم تنصيب البرنامج <br />
 							نضغط على "OK" <br />
-							<img src={four} alt="four" />
+							<img src={four} alt="four" /> <br />
+							بعد الإنتهاء من تنصيب البرنامج، تظهر الرسالة التالية <br />
+							<img src={five} alt="five" /> <br />
+							الخيار "Donate now" هو للتبرع للقائمات والقائمين على إعداد التطبيق
+							<br />
 						</li>
+						<li>نضغط على خيار "Finish"ﻹنهاء الإعداد</li>
 					</ul>
 				</div>
 				<div className="creating" id="creating"></div>
