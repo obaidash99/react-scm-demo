@@ -304,6 +304,18 @@ nav li a:hover {
 	font-size: 22px;
 	text-align: right;
 }
+.instructions .intro ul li {
+	transition: var(--main-transition-duration);
+}
+.instructions .intro ul li:hover {
+	transform: scale(1.1);
+	background-color: var(--main-color-alt);
+	padding: 5px;
+	border-radius: 6px;
+}
+.instructions .intro ul li:hover a {
+	color: white;
+}
 .instructions .child-list {
 	list-style: none;
 	font-size: 19px;
