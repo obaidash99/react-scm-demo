@@ -226,7 +226,7 @@ nav li a:hover {
 /* Each App */
 .main {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 10px;
 }
 .main h1 {
 	text-align: center;
@@ -239,31 +239,39 @@ nav li a:hover {
 	padding-bottom: 50px;
 	gap: 30px;
 }
-.content div {
+.main div {
 	flex: 1;
 }
-.content .info {
+.main .info {
 	text-align: right;
 }
-.content .info p {
+.main p,
+.main q {
+	line-height: 2;
 	margin-top: 10px;
 }
-.content .info span {
+.main .info ul li {
+	margin-top: 5px;
+}
+.main .info span {
 	font-weight: bold;
 	color: var(--main-color);
 }
-.content .image {
+.main .image {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.content .image img {
+.main .image img {
 	width: 90%;
 }
-.content .how h3 {
+.main .info h3,
+.main .how h3 {
 	font-size: 20px;
 	color: var(--main-color);
+	margin-bottom: 10px;
 }
-.content .how p {
-	line-height: 2;
+.main .differnce {
+	text-align: center;
+	padding-bottom: 20px;
 }
