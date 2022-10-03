@@ -172,7 +172,7 @@ nav li a:hover {
 /* Start Applications */
 .applications {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 	text-align: center;
 }
 .applications h2 {
@@ -214,22 +214,24 @@ nav li a:hover {
 	margin-top: 12px;
 	margin-bottom: 10px;
 }
+/* Start Footer */
 .footer {
 	margin-top: 30px;
 	padding-top: 10px;
 	border-top: 2px solid #eee;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-evenly; */
+	gap: 30px;
 }
 .footer .image {
-	width: fit-content;
-}
-.footer .image a {
 	width: 50%;
 }
-.footer .image a img {
+/* .footer .image a {
 	width: 100%;
+} */
+.footer .image a img {
+	width: 50%;
 }
 .footer ul {
 	width: fit-content;
@@ -256,6 +258,9 @@ footer .copy-right {
 	background-color: var(--main-color-alt);
 	color: white;
 	text-align: center;
+}
+footer .copy-right p {
+	margin: 0;
 }
 /* Responsive Footer */
 @media screen and (max-width: 767px) {

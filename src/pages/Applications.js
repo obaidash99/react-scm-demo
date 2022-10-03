@@ -44,11 +44,13 @@ const Applications = () => {
 							<p>تشفير البيانات محلياَ</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>Eraser - ايرسير </h4>
-						<img src={eraser} alt="eraser" />
-						<p>الحذف الآمن للبيانات</p>
-					</div>
+					<Link to="/applications/Eraser">
+						<div className="card">
+							<h4>Eraser - ايرسير </h4>
+							<img src={eraser} alt="eraser" />
+							<p>الحذف الآمن للبيانات</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>Bitwarden - بت واردن</h4>
 						<img src={bitwarden} alt="bitwarden" />
@@ -96,6 +98,7 @@ const Applications = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
