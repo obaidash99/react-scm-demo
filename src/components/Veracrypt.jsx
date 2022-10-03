@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from '../assets/veracrypt.png';
+import logo from '../assets/veraCryptImgs/vera-logo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Footer from '../components/Footer.js';
 
 import one from '../assets/veraCryptImgs/img1-1.jpg';
 import two from '../assets/veraCryptImgs/img1-2.jpg';
@@ -176,7 +178,7 @@ const Veracrypt = () => {
 						<img src={seven} alt="seven" /> <br />
 						<li>
 							نضغط على خيار "Create Volume" لـ :
-							<ul class="child-list">
+							<ul className="child-list">
 								<li>إنشاء مجلد مشفر</li>
 								<li>تشفير أحد الأقراص الداخلية في الجهاز أو وسائط التخزين الخارجية</li>
 								<li>تشفير نظام التشغيل</li>
@@ -184,7 +186,7 @@ const Veracrypt = () => {
 						</li>
 						صفحة VeraCrypt Volume Creation Wizard <br />
 						<img src={eight} alt="eight" />
-						<ul class="child-list">
+						<ul className="child-list">
 							<li>الخيار الأول: إنشاء حافظة\مجلد مشفر</li>
 							<li>
 								الخيار الثاني: تشفير Flash memory أو تشفير أحد الأقراص في جهاز الكمبيوتر
@@ -199,7 +201,7 @@ const Veracrypt = () => {
 						تحديد نوعية المجلد التي نريد انشائه <br />
 						<img src={nine} alt="nine" /> <br />
 						يوجد خياران:
-						<ul class="child-list">
+						<ul className="child-list">
 							<li>الأول: إنشاء مجلد مشفر</li>
 							<li>الثاني: إنشاء مجلد مشفر مخفي</li>
 						</ul>
@@ -235,7 +237,7 @@ const Veracrypt = () => {
 						</li>
 						<li>
 							نختار مقياس الحجم: كيلو بايت - ميغا بايت - غيغا بايت - تيرا بايت
-							<ul class="child-lisst">
+							<ul className="child-lisst">
 								<li>كل 1000 كيلو بايت = 1 ميغا بايت</li>
 								<li>كل 1000 ميغا بايت = 1 غيغا بايت</li>
 								<li>كل 1000 غيغا بايت = 1 تيرا بايت</li>
@@ -257,34 +259,34 @@ const Veracrypt = () => {
 						<li>
 							عند إدخال كلمة سر أقل من 20 خانة، ستظهر الرسالة التالية، نضغط على خيار "Yes"{' '}
 							<br />
-							<img src={sixteen} alt="sixteen" />
+							<img src={sixteen} alt="sixteen" /> <br />
 							صفحة Volume Format <br />
 							تهيئة المجلد المشفر <br />
 							<img src={seventeen} alt="seventeen" />
-							<li>نضغط على خيار "Format"</li>
-							عند الإنتهاء من عملية التهيئة، تظهر الرسالة التالية، وتعني أن عملية إنشاء
-							المجلد المشفر تمت بنجاح <br />
-							<li>
-								نضغط على خيار "OK" <br />
-								<img src={eighteen} alt="eightteen" />
-							</li>
-							<span>
-								يختلف الوقت الذي يستغرقه البرنامج بالتهيئة بحسب حجم المجلد الذي اخترناه
-								(كلما زاد حجم المجلد، كلما زاد وقت التهيئة، كما يتعلق الأمر بمواصفات
-								الجهاز الذي نعمل عليه)
-							</span>{' '}
-							<br />
-							صفحة Volume Create <br />
-							إنشاء مجلد جديدة مشفر <br />
-							<img src={ninteen} alt="ninteen" /> <br />
-							عند الرغبة بإنشاء مجلد مشفر جديد، نضغط على خيار "Next"، ونتابع الخطوات
-							السابقة.
-							<li>عند عدم الرغبة بإنشاء مجلد جديدة، نضغط على خيار "Exit"</li>
-							<span>
-								هكذا، نكون قد انشأنا مجلد مشفر، يمكننا استخدامه لحفظ كافة الملفات
-								والمجلدات التي نريد تشفيرها
-							</span>
 						</li>
+						<li>نضغط على خيار "Format"</li>
+						عند الإنتهاء من عملية التهيئة، تظهر الرسالة التالية، وتعني أن عملية إنشاء
+						المجلد المشفر تمت بنجاح <br />
+						<li>
+							نضغط على خيار "OK" <br />
+							<img src={eighteen} alt="eightteen" />
+						</li>
+						<span>
+							يختلف الوقت الذي يستغرقه البرنامج بالتهيئة بحسب حجم المجلد الذي اخترناه
+							(كلما زاد حجم المجلد، كلما زاد وقت التهيئة، كما يتعلق الأمر بمواصفات الجهاز
+							الذي نعمل عليه)
+						</span>{' '}
+						<br />
+						صفحة Volume Create <br />
+						إنشاء مجلد جديدة مشفر <br />
+						<img src={ninteen} alt="ninteen" /> <br />
+						عند الرغبة بإنشاء مجلد مشفر جديد، نضغط على خيار "Next"، ونتابع الخطوات
+						السابقة.
+						<li>عند عدم الرغبة بإنشاء مجلد جديدة، نضغط على خيار "Exit"</li>
+						<span>
+							هكذا، نكون قد انشأنا مجلد مشفر، يمكننا استخدامه لحفظ كافة الملفات والمجلدات
+							التي نريد تشفيرها
+						</span>
 					</ul>
 				</div>
 				<div className="incrypting" id="incrypting">
@@ -337,6 +339,7 @@ const Veracrypt = () => {
 					</h3>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
