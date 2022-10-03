@@ -17,6 +17,8 @@ import ten from '../assets/eraserImgs/img10.jpg';
 import eleven from '../assets/eraserImgs/img11.jpg';
 import twelve from '../assets/eraserImgs/img12.jpg';
 import thirteen from '../assets/eraserImgs/img13.jpg';
+import fourteen from '../assets/eraserImgs/img14.jpg';
+import fifteen from '../assets/eraserImgs/img15.jpg';
 
 const Eraser = () => {
 	return (
@@ -319,17 +321,17 @@ const Eraser = () => {
 							<li>Run immediately: يتم البدء بعملية الحذف فوراً</li>
 							<li>Run on restart: يتم البدء بعملية الحذف عند إعادة تشغيل الكمبيوتر</li>
 						</ul>
-						<img src="./assets/eraserImgs/img13.jpg" alt="therteen" /> <br />
+						<img src={thirteen} alt="therteen" /> <br />
 						<span>الفقرة "Data to erase" تعرف المهام التي اخترناها</span>
 						<li>بعد الإنتهاء نضغط على الخيار "OK"</li>
 						تظهر الصفحة الرئيسية <br />
-						<img src="./assets/eraserImgs/img14.jpg" alt="fourteen" /> <br />
+						<img src={fourteen} alt="fourteen" /> <br />
 						إن كنا اخترنا الخيار "Run immediately" فسيتم فوراً البدء بعملية الحذف، كما في
 						الصورة السابقة <br />
 						إن كنا اخترنا الخيار "Run manually" يجب أن نضغط بالزر اليمين على المهمة
 						واختيار الخيار "Run" <br />
 						<span>عند الإنتهاء من مهمة الحذف، تظهر عبارة Completed</span> <br />
-						<img src="./assets/eraserImgs/img15.jpg" alt="fifteen" />
+						<img src={fifteen} alt="fifteen" />
 					</ul>
 					<h3>
 						<a
