@@ -96,7 +96,7 @@ const Veracrypt = () => {
 				</div>
 			</div>
 			<div className="container instructions">
-				<div className="intro">
+				<div className="guid">
 					<h3>يتكون هذا الدليل من ثلاثة أقسام رئيسية :</h3>
 					<ul>
 						<li>

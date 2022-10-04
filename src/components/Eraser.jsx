@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './Footer';
 
 import logo from '../assets/eraserImgs/eraser-logo.png';
@@ -22,11 +20,11 @@ import fifteen from '../assets/eraserImgs/img15.jpg';
 
 const Eraser = () => {
 	return (
-		<div class="main">
-			<div class="container">
-				<h1 class="main-title">Eraser || ايرايسر</h1>
-				<div class="content content-1">
-					<div class="info">
+		<div className="main eraser">
+			<div className="container">
+				<h1 className="main-title">Eraser || ايرايسر</h1>
+				<div className="content content-1">
+					<div className="info">
 						<p>
 							الاسم: <span>ايرايسر</span>
 							<br />
@@ -38,10 +36,10 @@ const Eraser = () => {
 							الثمن: <span>مجاني</span>
 						</p>
 					</div>
-					<div class="image">
+					<div className="image">
 						<img src={logo} alt="logo" />
 					</div>
-					<div class="how">
+					<div className="how">
 						<h3>كيف يعمل؟</h3>
 						<p>
 							يقوم بحذف أيقونة الملف/المجلد وتشويه البيانات بشكل معقد حيث يصعب من إمكانية
@@ -50,7 +48,7 @@ const Eraser = () => {
 						</p>
 					</div>
 				</div>
-				<div class="content content-2 info">
+				<div className="content content-2 info">
 					<h3>ما هو الفرق بين المجلد والملف؟</h3>
 					<q>
 						<span>الملف:</span> هو مكان لتخزين البيانات، مثل: ملف وورد، ملف جداول اكسل،
@@ -61,11 +59,8 @@ const Eraser = () => {
 						مختلفة،
 						<span>يمكن تشبيه الملف أو الملفات بـ الكتب | وتشبيه المجلد بـ المكتبة</span>
 					</q>
-					{/* <Link to="">
-						<FontAwesomeIcon icon="fa-solid fa-angles-down" class="go-down" />
-					</Link> */}
 				</div>
-				<div class="content content-2 info">
+				<div className="content content-2 info">
 					<h3>ما الفرق بين الحذف العادي والحذف عن طريق ايرايسر؟</h3>
 					<q>
 						عندما يتم حذف أي ملف <span>بشكل عادي</span> يقوم نظام التشغيل بحذف أيقونة
@@ -85,26 +80,26 @@ const Eraser = () => {
 					</q>
 				</div>
 			</div>
-			<div class="container instructions">
-				<div class="disc">
-					<div class="one">
+			<div className="container instructions">
+				<div className="disc">
+					<div className="one">
 						<h3>الحذف الآمن</h3>
-						<ul class="child-list">
+						<ul className="child-list">
 							ما هي الطريقة لحذف ملف أو مجلد من جهاز الكمبيوتر أو من وحدة التخزين (فلاش
 							ميموري)؟
 							<li>حذف (ديليت)</li>
 							<li>Shift + Delete</li>
 							<li>النقل إلى سلة المحذوفات، ثم إفراغ سلة المحذوفات</li>
 						</ul>
-						<ul class="child-list">
+						<ul className="child-list">
 							ما هي الطريقة لحذف كافة الملفات والمجلدات من جهاز الكمبيوتر أو وحدة التخزين
 							(فلاش ميموري)؟
 							<li>فرمتة الجهاز أو وحدة التخزين Format</li>
 						</ul>
 					</div>
 				</div>
-				<div class="disc">
-					<div class="one">
+				<div className="disc">
+					<div className="one">
 						<h3>ولكن!</h3>
 						<p>
 							هل الحذف بالطرق السابقة، يعني أن الملف أو المجلد الذي قمنا بحذفه، لا يمكن
@@ -118,8 +113,8 @@ const Eraser = () => {
 						</p>
 					</div>
 				</div>
-				<div class="disc">
-					<div class="one">
+				<div className="disc">
+					<div className="one">
 						<h3>استرجاع ملفات حُذفت بشكل عادي!</h3>
 						<p>
 							عملية استرجاع أو استعادة الملفات المحذوفة من الكمبيوتر أو وحدة التخزين، يمكن
@@ -128,7 +123,7 @@ const Eraser = () => {
 							المحذوفات - فرمتة الجهاز) <span>هي عمليات حذف غير آمنة</span>
 						</p>
 					</div>
-					<div class="two">
+					<div className="two">
 						<h3>سؤال!</h3>
 						<p>
 							هل يوجد طريقة لحذف الملفات والمجلدات من جهاز الكمبيوتر أو وسائط التخزين
@@ -140,8 +135,8 @@ const Eraser = () => {
 					</div>
 				</div>
 			</div>
-			<div class="container instructions">
-				<div class="guid">
+			<div className="container instructions">
+				<div className="guid">
 					<h3>يتكون هذا الدليل من ثلاثة أقسام رئيسية :</h3>
 					<ul>
 						<li>
@@ -155,14 +150,14 @@ const Eraser = () => {
 						</li>
 					</ul>
 				</div>
-				<div class="installing" id="installing">
+				<div className="installing" id="installing">
 					<h3>1- تنصيب برنامج ايرايزر</h3>
-					<ul class="main-list">
+					<ul className="main-list">
 						<li>
 							الحصول على التطبيق:
-							<ul class="child-list">
+							<ul className="child-list">
 								<li>
-									لأجهزة ويندوز من
+									لأجهزة ويندوز من{' '}
 									<span>
 										<a
 											target="_blank"
@@ -171,15 +166,15 @@ const Eraser = () => {
 										>
 											هنا
 										</a>
-									</span>
-									أو من
+									</span>{' '}
+									أو من{' '}
 									<span>
 										<a
 											target="_blank"
 											href="https://eraser.heidi.ie/download/"
 											rel="noreferrer"
 										>
-											موقع التطبيق
+											موقع التطبيق{' '}
 										</a>
 									</span>
 								</li>
@@ -246,15 +241,15 @@ const Eraser = () => {
 						</li>
 					</ul>
 				</div>
-				<div class="creating" id="creating">
+				<div className="creating" id="creating">
 					<h3>2- حذف ملف عن طريق البرنامج</h3>
-					<ul class="main-list">
+					<ul className="main-list">
 						بعد حفظ الاعدادات، نقوم بإغلاق البرنامج
 						<li>
 							الآن، لحذف أي ملف أو مجلد بطريقة آمنة، نضغط بالزر اليمين على أي ملف أو مجلد{' '}
 							<br />
 							<span>نضغط على الخيار Eraser من القائمة</span>
-							<ul class="child-list">
+							<ul className="child-list">
 								عند الضغط على الخيار Eraser يظهر خياران:
 								<li>الخيار: Erase | يقوم بعملية الحذف فوراً</li>
 								<li>
@@ -270,9 +265,9 @@ const Eraser = () => {
 						</li>
 					</ul>
 				</div>
-				<div class="incrypting" id="incrypting">
+				<div className="incrypting" id="incrypting">
 					<h3>3- جدولة بعض الملفات للحذف</h3>
-					<ul class="main-list">
+					<ul className="main-list">
 						يمكن إضافة (جدولة) حذف عدد من الملفات والمجلدات وخيارات اُخرى <br />
 						<li>
 							من الصفحة الرئيسية للبرنامج، نضغط باليمين داخل المساحة البيضاء، ثم نضغط على
@@ -315,7 +310,7 @@ const Eraser = () => {
 							<img src={twelve} alt="twelve" />
 						</li>
 						<li>ثم نضغط على خيار "OK"</li>
-						<ul class="child-list">
+						<ul className="child-list">
 							<span>في الفقرة "Task Type"</span>
 							<li>Run manually: يتم البدء بعملية الحذف يدوياً</li>
 							<li>Run immediately: يتم البدء بعملية الحذف فوراً</li>

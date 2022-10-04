@@ -3,6 +3,8 @@
 	--main-color: #538fcc;
 	--main-color-alt: #4372a1;
 	--main-transition-duration: all 0.3s ease;
+	--eraser-color: #7c2b2b;
+	--eraser-color-alt: #cc5353;
 }
 
 * {
@@ -143,11 +145,14 @@ nav li a:hover {
 	margin: 30px auto;
 	color: var(--main-color-alt);
 }
+/* .arrow-parent {
+	position: relative;
+}
 .go-down {
 	color: var(--main-color-alt);
 	position: absolute;
 	transition: var(--main-transition-duration);
-	font-size: 30px;
+	font-size: 10px;
 	animation: bouncing 1.5s infinite;
 	margin-top: 15px;
 	left: 50%;
@@ -155,7 +160,7 @@ nav li a:hover {
 }
 .go-down:hover {
 	color: var(--main-color);
-}
+} */
 /* Responsive Home */
 @media (max-width: 767px) {
 	.home {
@@ -382,7 +387,6 @@ footer .copy-right p {
 	cursor: pointer;
 }
 .instructions .guid ul li:hover {
-	transform: scale(1.01);
 	background-color: var(--main-color-alt);
 	padding: 5px;
 	border-radius: 6px;
@@ -401,12 +405,12 @@ footer .copy-right p {
 .child-list span a {
 	color: var(--main-color-alt);
 	transition: var(--main-transition-duration);
+	padding: 0 2px;
 }
 .child-list span a:hover {
 	background-color: var(--main-color-alt);
 	color: white;
 	border-radius: 6px;
-	padding: 0;
 }
 .instructions img {
 	width: 700px;
@@ -422,7 +426,7 @@ footer .copy-right p {
 	background-color: var(--main-color);
 	color: white;
 	border-radius: 6px;
-	padding: 5px;
+	padding: 2px;
 }
 /* Instructions Responsive */
 @media screen and (max-width: 767px) {
@@ -432,4 +436,31 @@ footer .copy-right p {
 	.instructions .disc {
 		flex-direction: column;
 	}
+}
+/* Eraser Colors */
+.eraser h3 {
+	color: var(--eraser-color);
+}
+.eraser span {
+	color: var(--eraser-color-alt);
+}
+.eraser .child-list span a {
+	color: var(--eraser-color-alt);
+}
+.eraser .child-list span a:hover {
+	background-color: var(--eraser-color-alt);
+	color: white;
+}
+.eraser .instructions .guid ul li:hover {
+	background-color: var(--eraser-color-alt);
+}
+.eraser .instructions .guid ul li:hover a {
+	color: white;
+}
+.eraser .instructions h3 a {
+	color: var(--eraser-color-alt);
+}
+.eraser .instructions h3 a:hover {
+	background-color: var(--eraser-color-alt);
+	color: white;
 }
