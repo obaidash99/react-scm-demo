@@ -5,6 +5,14 @@
 	--main-transition-duration: all 0.3s ease;
 	--eraser-color: #7c2b2b;
 	--eraser-color-alt: #cc5353;
+	--bitwarden-color: #14449c;
+	--bitwarden-color-alt: #175ddc;
+	--authy-color: #ee1b22;
+	--authy-color-alt: #be0006;
+	--mailvelope-color: #ff004f;
+	--mailvelope-color-alt: #c90040;
+	--eset-color: #00656b;
+	--eset-color-alt: #00484c;
 }
 
 * {
@@ -145,7 +153,7 @@ nav li a:hover {
 	margin: 30px auto;
 	color: var(--main-color-alt);
 }
-/* .arrow-parent {
+.arrow-parent {
 	position: relative;
 }
 .go-down {
@@ -157,10 +165,12 @@ nav li a:hover {
 	margin-top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
+	font-size: 30px;
 }
 .go-down:hover {
 	color: var(--main-color);
-} */
+}
+
 /* Responsive Home */
 @media (max-width: 767px) {
 	.home {
@@ -220,23 +230,27 @@ nav li a:hover {
 	margin-bottom: 10px;
 }
 /* Start Footer */
-.footer {
-	margin-top: 30px;
-	padding-top: 10px;
+footer {
 	border-top: 2px solid #eee;
+	margin-top: 30px;
+}
+.footer {
+	padding: 10px 0;
 	display: flex;
 	align-items: center;
-	/* justify-content: space-evenly; */
+	justify-content: space-between;
 	gap: 30px;
 }
 .footer .image {
 	width: 50%;
 }
-/* .footer .image a {
+.footer .image a {
+	display: flex;
+	align-items: center;
 	width: 100%;
-} */
+}
 .footer .image a img {
-	width: 50%;
+	width: 90%;
 }
 .footer ul {
 	width: fit-content;
@@ -265,16 +279,19 @@ footer .copy-right {
 	text-align: center;
 }
 footer .copy-right p {
-	margin: 0;
+	text-align: center;
 }
 /* Responsive Footer */
 @media screen and (max-width: 767px) {
-	.footer {
+	/* .footer {
 		flex-direction: column-reverse;
 		justify-content: center;
-	}
+	} */
 	.footer .image {
-		width: 80%;
+		width: 100%;
+	}
+	.footer .image a img {
+		width: 100%;
 	}
 }
 /* Start Animation */
@@ -310,26 +327,85 @@ footer .copy-right p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* padding-bottom: 30px; */
 	gap: 30px;
 }
+.main .content {
+	padding-right: 20px;
+}
+.main .content-1 .how h3,
+.main .content-1 .how .a-links,
+.main .content-1 .how p {
+	text-align: center;
+}
+
+.how ul.apps {
+	list-style: none;
+}
+
+ul.apps li {
+	margin: 5px auto;
+	border: 1px solid var(--main-color);
+	border-radius: 5px;
+	transition: 0.3s ease;
+	width: fit-content;
+	padding: 5px 10px;
+}
+
+ul.apps a {
+	color: var(--main-color);
+	font-weight: bold;
+	transition: 0.3s ease;
+}
+
+ul.apps li:hover {
+	background-color: var(--main-color);
+}
+
+ul.apps li:hover a {
+	color: #fff;
+}
+
 .main div {
 	flex: 1;
 }
 .main .info {
 	text-align: right;
 }
+.main .info h3 a {
+	color: var(--main-color);
+	font-weight: bold;
+	transition: 0.3s ease;
+	padding: 0 10px;
+	border-radius: 5px;
+}
+.main .info h3 a:hover {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
 .main p,
 .main q {
 	line-height: 2;
 	margin-top: 8px;
 	display: block;
-	text-align: center;
+	text-align: right;
 }
 .main span {
 	font-weight: bold;
 	color: var(--main-color);
 }
+
+.special-span a {
+	color: orange;
+	padding: 2px 5px;
+	transition: all 0.3s ease;
+}
+.special-span:hover a {
+	border-radius: 5px;
+	color: #fff;
+	background-color: orange;
+}
+
 .main .image {
 	display: flex;
 	align-items: center;
@@ -338,14 +414,21 @@ footer .copy-right p {
 .main .image img {
 	width: 90%;
 }
+.main.authy .image img {
+	width: 75%;
+}
 .main h3 {
 	font-size: 25px;
 	color: var(--main-color);
 	margin: 20px 0 0;
+	text-align: right;
 }
 .main .content-2 {
-	text-align: center;
-	padding-bottom: 50px;
+	text-align: right;
+	padding-bottom: 20px;
+}
+.main .content-2 q {
+	text-align: right;
 }
 .main .content-3 {
 	text-align: center;
@@ -356,20 +439,29 @@ footer .copy-right p {
 	.main .content-1 {
 		flex-direction: column;
 		justify-content: center;
+		text-align: right;
 	}
 	.main p,
 	.main q {
 		width: 90%;
 		margin: auto;
+		text-align: right;
+	}
+	.main .content-1 .how h3,
+	.main .content-1 .how p {
+		text-align: right;
 	}
 }
 
 /* Start Instructions */
 .instructions .disc {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
-	gap: 30px;
+	align-items: flex-start;
+}
+.instructions .disc .one h3 {
+	text-align: right;
 }
 .instructions ul {
 	list-style: number;
@@ -394,26 +486,32 @@ footer .copy-right p {
 .instructions .guid ul li:hover a {
 	color: white;
 }
+.content .child-list,
 .instructions .child-list {
 	list-style: none;
 	font-size: 19px;
-	list-style: disc;
+	list-style: number;
+}
+.child-list.new img {
+	width: 100%;
 }
 .instructions .child-list li {
 	margin-top: 8px;
 }
+.main-list span a,
 .child-list span a {
 	color: var(--main-color-alt);
 	transition: var(--main-transition-duration);
 	padding: 0 2px;
 }
+.main-list span a:hover,
 .child-list span a:hover {
 	background-color: var(--main-color-alt);
 	color: white;
 	border-radius: 6px;
 }
 .instructions img {
-	width: 700px;
+	width: 60%;
 }
 /* .instructions h3 {
 	margin: 20px;
@@ -431,7 +529,7 @@ footer .copy-right p {
 /* Instructions Responsive */
 @media screen and (max-width: 767px) {
 	.instructions img {
-		width: 350px;
+		width: 100%;
 	}
 	.instructions .disc {
 		flex-direction: column;
@@ -463,4 +561,144 @@ footer .copy-right p {
 .eraser .instructions h3 a:hover {
 	background-color: var(--eraser-color-alt);
 	color: white;
+}
+
+/* Bitwarden Colors */
+.bitwarden h3 {
+	color: var(--bitwarden-color);
+}
+.bitwarden span {
+	color: var(--bitwarden-color-alt);
+}
+.bitwarden .child-list span a {
+	color: var(--bitwarden-color-alt);
+}
+.bitwarden .child-list span a:hover {
+	background-color: var(--bitwarden-color-alt);
+	color: white;
+}
+.bitwarden .instructions .guid ul li:hover {
+	background-color: var(--bitwarden-color-alt);
+}
+.bitwarden .instructions .guid ul li:hover a {
+	color: white;
+}
+.bitwarden .instructions h3 a {
+	color: var(--bitwarden-color-alt);
+}
+.bitwarden .instructions h3 a:hover {
+	background-color: var(--bitwarden-color-alt);
+	color: white;
+}
+
+/* Authy Colors */
+.authy h3 {
+	color: var(--authy-color);
+}
+.authy span {
+	color: var(--authy-color-alt);
+}
+.authy .child-list span a {
+	color: var(--authy-color-alt);
+}
+.authy .child-list span a:hover {
+	background-color: var(--authy-color-alt);
+	color: white;
+}
+.authy .instructions .guid ul li:hover {
+	background-color: var(--authy-color-alt);
+}
+.authy .instructions .guid ul li:hover a {
+	color: white;
+}
+.authy .instructions h3 a {
+	color: var(--authy-color-alt);
+}
+.authy .instructions h3 a:hover {
+	background-color: var(--authy-color-alt);
+	color: white;
+}
+
+/* MailVelope Colors */
+.mailvelope h3 {
+	color: var(--mailvelope-color);
+}
+.mailvelope span {
+	color: var(--mailvelope-color-alt);
+}
+.mailvelope .child-list span a {
+	color: var(--mailvelope-color-alt);
+}
+.mailvelope .child-list span a:hover {
+	background-color: var(--mailvelope-color-alt);
+	color: white;
+}
+.mailvelope .instructions .guid ul li:hover {
+	background-color: var(--mailvelope-color-alt);
+}
+.mailvelope .instructions .guid ul li:hover a {
+	color: white;
+}
+.mailvelope .instructions h3 a {
+	color: var(--mailvelope-color-alt);
+}
+.mailvelope .instructions h3 a:hover {
+	background-color: var(--mailvelope-color-alt);
+	color: white;
+}
+
+/* ESET Colors */
+.eset h3 {
+	color: var(--eset-color);
+}
+.eset span {
+	color: var(--eset-color-alt);
+}
+.eset .child-list span a {
+	color: var(--eset-color-alt);
+}
+.eset .child-list span a:hover {
+	background-color: var(--eset-color-alt);
+	color: white;
+}
+.eset .instructions .guid ul li:hover {
+	background-color: var(--eset-color-alt);
+}
+.eset .instructions .guid ul li:hover a {
+	color: white;
+}
+.eset .instructions h3 a {
+	color: var(--eset-color-alt);
+}
+.mailvelope .instructions h3 a:hover {
+	background-color: var(--mailvelope-color-alt);
+	color: white;
+}
+
+.special {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.special .image {
+	flex: 50%;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.special .image img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.authy .special .image img {
+	height: 60%;
+}
+
+@media (max-width: 767px) {
+	.special .image {
+		flex: 70%;
+	}
 }
