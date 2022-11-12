@@ -1,6 +1,5 @@
 import React from 'react';
 import footerImg from '../assets/veraCryptImgs/image13.jpg';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (

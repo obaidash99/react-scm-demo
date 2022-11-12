@@ -21,13 +21,6 @@ const Applications = () => {
 			<div className="container">
 				<h2>التطبيقات المستخدمة</h2>
 				<div className="content">
-					<Link to="/applications/VMware">
-						<div className="card">
-							<h4>VMware - في ام وير</h4>
-							<img src={vmware} alt="vmware" />
-							<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
-						</div>
-					</Link>
 					<Link to="/applications/Eset">
 						<div className="card">
 							<h4>East Smart Security - إيست سيكيوريتي</h4>
@@ -49,11 +42,13 @@ const Applications = () => {
 							<p>الحذف الآمن للبيانات</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>Bitwarden - بت واردن</h4>
-						<img src={bitwarden} alt="bitwarden" />
-						<p>إدارة بيانات تسجيل الدخول</p>
-					</div>
+					<Link to="/applications/Bitwarden">
+						<div className="card">
+							<h4>Bitwarden - بت واردن</h4>
+							<img src={bitwarden} alt="bitwarden" />
+							<p>إدارة بيانات تسجيل الدخول</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>Authy - أوثي</h4>
 						<img src={authy} alt="authy" />

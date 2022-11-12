@@ -14,6 +14,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import Veracrypt from './components/Veracrypt';
 import Eset from './components/Eset';
 import Eraser from './components/Eraser';
+import Bitwarden from './components/Bitwarden.jsx';
 import Zoom from './components/Zoom.jsx';
 import Footer from './components/Footer';
 
@@ -28,9 +29,10 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/applications" element={<Applications />} />
-						<Route path="/applications/Veracrypt" element={<Veracrypt />} />
 						<Route path="/applications/Eset" element={<Eset />} />
+						<Route path="/applications/Veracrypt" element={<Veracrypt />} />
 						<Route path="/applications/Eraser" element={<Eraser />} />
+						<Route path="/applications/Bitwarden" element={<Bitwarden />} />
 						<Route path="/applications/Zoom" element={<Zoom />} />
 					</Routes>
 					<Footer />
