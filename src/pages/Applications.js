@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import authy from '../assets/authy.png';
-import vmware from '../assets/vmware.png';
 import microAuth from '../assets/microsoft-auth.png';
 import veraCrypt from '../assets/veracrypt.png';
 import bitwarden from '../assets/bitwarden.png';
@@ -56,31 +55,41 @@ const Applications = () => {
 							<p>التحقق بخطوتين عند تسجيل الدخول</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>Microsoft Authenticator - مايكروسوفت أوثونتكاتور</h4>
-						<img src={microAuth} alt="microsoft-auth" />
-						<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
-					</div>
-					<div className="card">
-						<h4>NordVPN - نورد في بي إن</h4>
-						<img src={nordvpn} alt="nordvpn" />
-						<p>الاتصال الآمن بالانترنت</p>
-					</div>
-					<div className="card">
-						<h4>Google Workspace - جوجل وورك سبيس</h4>
-						<img src={workspace} alt="workspace" />
-						<p>تطبيقات جوجل: (جوجل دوكس - جوجل شيتس..)</p>
-					</div>
-					<div className="card">
-						<h4>Mailvelope - الميل فيلوب</h4>
-						<img src={mailvelope} width="200px" alt="mailvelope" />
-						<p>تشفير الإيميلات والمرفقات</p>
-					</div>
-					<div className="card">
-						<h4>Jitsi - جيتسي</h4>
-						<img src={jitsi} alt="jitsi" />
-						<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
-					</div>
+					<Link to="/applications/MicrosoftAuth">
+						<div className="card">
+							<h4>Microsoft Authenticator - مايكروسوفت أوثونتكاتور</h4>
+							<img src={microAuth} alt="microsoft-auth" />
+							<p>نظام الويندوز الافتراضي باستخدام - الفي ام وير</p>
+						</div>
+					</Link>
+					<Link to="/applications/Nord">
+						<div className="card">
+							<h4>NordVPN - نورد في بي إن</h4>
+							<img src={nordvpn} alt="nordvpn" />
+							<p>الاتصال الآمن بالانترنت</p>
+						</div>
+					</Link>
+					<Link to="/applications/Workspace">
+						<div className="card">
+							<h4>Google Workspace - جوجل وورك سبيس</h4>
+							<img src={workspace} alt="workspace" />
+							<p>تطبيقات جوجل: (جوجل دوكس - جوجل شيتس..)</p>
+						</div>
+					</Link>
+					<Link to="/applications/Mailvelope">
+						<div className="card">
+							<h4>Mailvelope - الميل فيلوب</h4>
+							<img src={mailvelope} width="200px" alt="mailvelope" />
+							<p>تشفير الإيميلات والمرفقات</p>
+						</div>
+					</Link>
+					<Link to="/applications/Jitsi">
+						<div className="card">
+							<h4>Jitsi - جيتسي</h4>
+							<img src={jitsi} alt="jitsi" />
+							<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
+						</div>
+					</Link>
 					<Link to="/applications/Zoom">
 						<div className="card">
 							<h4>Zoom - زووم</h4>
@@ -88,11 +97,13 @@ const Applications = () => {
 							<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>Other - تطبيقات أخرى</h4>
-						<img src={other} alt="other" />
-						<p>المزيد من التطبيقات - للاطلاع عليها</p>
-					</div>
+					<Link to="/applications/Other">
+						<div className="card">
+							<h4>Other - تطبيقات أخرى</h4>
+							<img src={other} alt="other" />
+							<p>المزيد من التطبيقات - للاطلاع عليها</p>
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>

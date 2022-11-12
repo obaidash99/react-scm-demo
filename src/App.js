@@ -16,7 +16,14 @@ import Eset from './components/Eset';
 import Eraser from './components/Eraser';
 import Bitwarden from './components/Bitwarden.jsx';
 import Authy from './components/Authy.jsx';
+import MicrosoftAuth from './components/MicrosoftAuth.jsx';
+import Nord from './components/Nord.jsx';
+import Workspace from './components/Workspace.jsx';
+import Mailvelope from './components/Mailvelope.jsx';
+import Jitsi from './components/Jitsi.jsx';
 import Zoom from './components/Zoom.jsx';
+import Other from './components/Other.jsx';
+
 import Footer from './components/Footer';
 
 function App() {
@@ -35,7 +42,13 @@ function App() {
 						<Route path="/applications/Eraser" element={<Eraser />} />
 						<Route path="/applications/Bitwarden" element={<Bitwarden />} />
 						<Route path="/applications/Authy" element={<Authy />} />
+						<Route path="/applications/MicrosoftAuth" element={<MicrosoftAuth />} />
+						<Route path="/applications/Nord" element={<Nord />} />
+						<Route path="/applications/Workspace" element={<Workspace />} />
+						<Route path="/applications/Mailvelope" element={<Mailvelope />} />
+						<Route path="/applications/Jitsi" element={<Jitsi />} />
 						<Route path="/applications/Zoom" element={<Zoom />} />
+						<Route path="/applications/Other" element={<Other />} />
 					</Routes>
 					<Footer />
 				</div>

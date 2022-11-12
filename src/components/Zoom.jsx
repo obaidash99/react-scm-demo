@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../assets/zoomImgs/logo.png';
+
 import one from '../assets/zoomImgs/img1.png';
 import two from '../assets/zoomImgs/img2.png';
 import three from '../assets/zoomImgs/img3.png';
@@ -14,6 +15,7 @@ import ten from '../assets/zoomImgs/img10.png';
 import eleven from '../assets/zoomImgs/img11.png';
 import twelve from '../assets/zoomImgs/img12.png';
 import thirteen from '../assets/zoomImgs/img13.png';
+
 import mobile1 from '../assets/zoomImgs/mobile1.jpg';
 import mobile2 from '../assets/zoomImgs/mobile2.jpg';
 import mobile3 from '../assets/zoomImgs/mobile3.jpg';

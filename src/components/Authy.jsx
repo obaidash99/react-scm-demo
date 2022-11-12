@@ -4,7 +4,6 @@ import logo from '../assets/authyImgs/logo.png';
 import download from '../assets/authyImgs/download.png';
 
 import img1 from '../assets/authyImgs/img1.png';
-import img2 from '../assets/authyImgs/img2.png';
 import img3 from '../assets/authyImgs/img3.png';
 import img4 from '../assets/authyImgs/img4.png';
 import img5 from '../assets/authyImgs/img5.png';
