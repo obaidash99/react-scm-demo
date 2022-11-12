@@ -20,7 +20,6 @@ import mob1 from '../assets/jitsiImgs/mobile1.jpg';
 import mob2 from '../assets/jitsiImgs/mobile2.jpg';
 import mob3 from '../assets/jitsiImgs/mobile3.jpg';
 import mob4 from '../assets/jitsiImgs/mobile4.jpg';
-import mob5 from '../assets/jitsiImgs/mobile5.jpg';
 import mob6 from '../assets/jitsiImgs/mobile6.jpg';
 
 const Jitsi = () => {
