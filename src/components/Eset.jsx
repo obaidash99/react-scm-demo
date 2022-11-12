@@ -1,5 +1,22 @@
 import React from 'react';
 
+import logo from '../assets/eraserImgs/eraser-logo.png';
+import one from '../assets/eraserImgs/img1.jpg';
+import two from '../assets/eraserImgs/img2.jpg';
+import three from '../assets/eraserImgs/img3.jpg';
+import four from '../assets/eraserImgs/img4.jpg';
+import five from '../assets/eraserImgs/img5.jpg';
+import six from '../assets/eraserImgs/img6.jpg';
+import seven from '../assets/eraserImgs/img7.jpg';
+import eight from '../assets/eraserImgs/img8.jpg';
+import nine from '../assets/eraserImgs/img9.jpg';
+import ten from '../assets/eraserImgs/img10.jpg';
+import eleven from '../assets/eraserImgs/img11.jpg';
+import twelve from '../assets/eraserImgs/img12.jpg';
+import thirteen from '../assets/eraserImgs/img13.jpg';
+import fourteen from '../assets/eraserImgs/img14.jpg';
+import fifteen from '../assets/eraserImgs/img15.jpg';
+
 const Eset = () => {
 	return (
 		<div className="main">
@@ -19,7 +36,7 @@ const Eset = () => {
 						</p>
 					</div>
 					<div className="image">
-						<img src='' alt="logo" />
+						<img src="" alt="logo" />
 					</div>
 					<div className="how">
 						<h3>كيف يعمل؟</h3>
@@ -98,7 +115,7 @@ const Eset = () => {
 								</li>
 								<li>
 									بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية
-									<img src='' alt="one" />
+									<img src="" alt="one" />
 								</li>
 							</ul>
 						</li>
@@ -109,21 +126,21 @@ const Eset = () => {
 						</li>
 						<li>
 							نضغط على "Next" <br />
-							<img src='' alt="two" /> <br />
+							<img src="" alt="two" /> <br />
 							بعدها تبدأ عملية التنصيب <br />
-							<img src='' alt="six" />
+							<img src="" alt="six" />
 						</li>
 						<li>
 							نضغط على خيار "Install"
 							<br />
-							<img src='' alt="three" />
+							<img src="" alt="three" />
 						</li>
 						<li>
 							عند الإنتهاء، تظهر الرسالة التالية، وتعني بأنه تم تنصيب البرنامج <br />
 							نضغط على "OK" <br />
-							<img src='' alt="four" /> <br />
+							<img src="" alt="four" /> <br />
 							بعد الإنتهاء من تنصيب البرنامج، تظهر الرسالة التالية <br />
-							<img src='' alt="five" /> <br />
+							<img src="" alt="five" /> <br />
 							الخيار "Donate now" هو للتبرع للقائمات والقائمين على إعداد التطبيق
 							<br />
 						</li>
@@ -139,7 +156,7 @@ const Eset = () => {
 						<br />
 						بعد تشغيل البرنامج، تظهر النافذة التالية
 						<br />
-						<img src='' alt="seven" /> <br />
+						<img src="" alt="seven" /> <br />
 						<li>
 							نضغط على خيار "Create Volume" لـ :
 							<ul className="child-list">
@@ -149,7 +166,7 @@ const Eset = () => {
 							</ul>
 						</li>
 						صفحة VeraCrypt Volume Creation Wizard <br />
-						<img src='' alt="eight" />
+						<img src="" alt="eight" />
 						<ul className="child-list">
 							<li>الخيار الأول: إنشاء حافظة\مجلد مشفر</li>
 							<li>
@@ -163,7 +180,7 @@ const Eset = () => {
 						<li>نضغط على خيار "Next"</li>
 						صفحة Volume Type <br />
 						تحديد نوعية المجلد التي نريد انشائه <br />
-						<img src='' alt="nine" /> <br />
+						<img src="" alt="nine" /> <br />
 						يوجد خياران:
 						<ul className="child-list">
 							<li>الأول: إنشاء مجلد مشفر</li>
@@ -174,19 +191,19 @@ const Eset = () => {
 						<li>نضغط على خيار "Next"</li>
 						صفحة Volume Location <br />
 						تحديد المكان الذي نريد إنشاء المجلد فيه <br />
-						<img src='' alt="ten" />
+						<img src="" alt="ten" />
 						<li>نضغط على "Select File"</li>
 						نحدد المكان الذي نريد إنشاء المجلد فيه (سطح المكتب أو أي مكان آخر) <br />
-						<img src='' alt="eleven" /> <br />
+						<img src="" alt="eleven" /> <br />
 						<li>في حقل "File name" نكتب اسم المجلد التي نريد انشائه</li>
 						<li>نضغط على خيار "Save"</li>
 						<li>
 							نضغط على خيار "Next" <br />
-							<img src='' alt="twelve" />
+							<img src="" alt="twelve" />
 						</li>
 						صفحة Encryption Options <br />
 						تحديد خوارزمية التشفير التي نريد استخدامها <br />
-						<img src='' alt="thirteen" /> <br />
+						<img src="" alt="thirteen" /> <br />
 						<li>
 							نختار الخوارزمية التي نريدها،
 							<span> يمكن اختيار أي خوارزمية</span>
@@ -194,7 +211,7 @@ const Eset = () => {
 						<li>نضغط على خيار "Next"</li>
 						صفحة Volume Size <br />
 						تحديد حجم المجلد التي نريد انشائه <br />
-						<img src='' alt="fourteen" />
+						<img src="" alt="fourteen" />
 						<li>
 							نكتب قيمة الحجم <br />
 							<span>بعد إنشاء المجلد المشفر، لا يمكن تغيير حجمه</span>
@@ -210,7 +227,7 @@ const Eset = () => {
 						<li>نضغط على "Next"</li>
 						صفحة Volume Password <br />
 						إنشاء كلمة سر للمجلد المشفر <br />
-						<img src='' alt="fifteen" />
+						<img src="" alt="fifteen" />
 						<br />
 						<li>ضمن خانة "Password" نضع كلمة السر التي نريدها</li>
 						<li>ضمن خانة "Confirm" نقوم بإعادة كتابة كلمة السر مرة اُخرى</li>
@@ -223,17 +240,17 @@ const Eset = () => {
 						<li>
 							عند إدخال كلمة سر أقل من 20 خانة، ستظهر الرسالة التالية، نضغط على خيار "Yes"{' '}
 							<br />
-							<img src='' alt="sixteen" /> <br />
+							<img src="" alt="sixteen" /> <br />
 							صفحة Volume Format <br />
 							تهيئة المجلد المشفر <br />
-							<img src='' alt="seventeen" />
+							<img src="" alt="seventeen" />
 						</li>
 						<li>نضغط على خيار "Format"</li>
 						عند الإنتهاء من عملية التهيئة، تظهر الرسالة التالية، وتعني أن عملية إنشاء
 						المجلد المشفر تمت بنجاح <br />
 						<li>
 							نضغط على خيار "OK" <br />
-							<img src='' alt="eightteen" />
+							<img src="" alt="eightteen" />
 						</li>
 						<span>
 							يختلف الوقت الذي يستغرقه البرنامج بالتهيئة بحسب حجم المجلد الذي اخترناه
@@ -243,7 +260,7 @@ const Eset = () => {
 						<br />
 						صفحة Volume Create <br />
 						إنشاء مجلد جديدة مشفر <br />
-						<img src='' alt="ninteen" /> <br />
+						<img src="" alt="ninteen" /> <br />
 						عند الرغبة بإنشاء مجلد مشفر جديد، نضغط على خيار "Next"، ونتابع الخطوات
 						السابقة.
 						<li>عند عدم الرغبة بإنشاء مجلد جديدة، نضغط على خيار "Exit"</li>
@@ -258,28 +275,28 @@ const Eset = () => {
 					<ul>
 						بعد الإنتهاء من إنشاء مجلد مشفر، أو عند تشغيل برنامج "فيرا كريبت" من جديد،
 						تظهر النافذة التالية: <br />
-						<img src='' alt="twenty" /> <br />
+						<img src="" alt="twenty" /> <br />
 						بالبداية يجب أن نقوم بفتح المجلد المشفر الذي انشأناه
 						<li>نضغط على خيار "Select File"</li>
 						نذهب إلى مكان وجود المجلد <br />
-						<img src='' alt="twenty-one" /> <br />
+						<img src="" alt="twenty-one" /> <br />
 						<li>نحدد المجلد الذي أنشأناه</li>
 						<li>نضغط على خيار "Open"</li>
 						بعد تحديد المجلد، سنقوم بتحديد اسم المجلد أو اسم القرص الذي ستفتح به <br />
-						<img src='' alt="twenty-two" /> <br />
+						<img src="" alt="twenty-two" /> <br />
 						<li>نحدد أي حرف من القائمة الموجودة</li>
 						<li>نضغط على خيار "Mount"</li>
 						يتم طلب كلمة السر <br />
-						<img src='' alt="twenty-three" />
+						<img src="" alt="twenty-three" />
 						<li>في حقل "Password" نضع كلمة السر الخاصة بالمجلد</li>
 						<li>نضغط على خيار "OK"</li>
 						ننتظر قليلاً ليتم فتح المجلد <br />
-						<img src='' alt="twenty-four" /> <br />
+						<img src="" alt="twenty-four" /> <br />
 						داخل "جهاز الكمبيوتر" نجد المجلد الذي انشأناه في هذا المثال، المجلد اسمه "M"{' '}
 						<br />
-						<img src='' alt="twenty-five" /> <br />
+						<img src="" alt="twenty-five" /> <br />
 						عند الضغط على المجلد داخل جهاز الكمبيوتر، يفتح كما في الصورة التالية <br />
-						<img src='' alt="twenty-six" /> <br />
+						<img src="" alt="twenty-six" /> <br />
 						الآن، بعد إنشاء وفتح المجلد المشفر، يمكننا استخدامه عن طريق وضع كافة الملفات
 						والمجلدات التي نريد تشفيرها وحمايتها بداخله <br />
 						<span>
@@ -288,7 +305,7 @@ const Eset = () => {
 						<br />
 						بعد الإنتهاء من العمل على المجلد، وعندما نريد إغلاقه، نعود للصفحة الرئيسية
 						لبرنامج "فيرا كريبت" <br />
-						<img src='' alt="twenty-secen" />
+						<img src="" alt="twenty-secen" />
 						<li>نحدد اسم المجلد</li>
 						<li>ضغط على الخيار "Dismount"</li>
 					</ul>

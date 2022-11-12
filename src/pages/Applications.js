@@ -15,8 +15,6 @@ import mailvelope from '../assets/mailvelope.png';
 import workspace from '../assets/workspace.png';
 import other from '../assets/other.png';
 
-import Footer from '../components/Footer';
-
 const Applications = () => {
 	return (
 		<div className="applications" id="applications">
@@ -98,7 +96,6 @@ const Applications = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

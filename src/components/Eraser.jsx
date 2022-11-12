@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 
 import logo from '../assets/eraserImgs/eraser-logo.png';
 import one from '../assets/eraserImgs/img1.jpg';
@@ -275,58 +274,92 @@ const Eraser = () => {
 							<img src={nine} alt="nine" />
 						</li>
 						<li>
-							تظهر الصفحة التالية: نضغط على الخيار" Add Data" <br />
-							<img src={ten} alt="ten" />
-						</li>
-						تظهر الصفحة التالية "Select Data to Erase" <br />
-						<img src={eleven} alt="eleven" />
-						<li>
-							الخيار File: لتحديد ملف <br />
-							<span>يتم تحديد الملف من الخيار Browse</span>
-						</li>
-						<li>
-							الخيار Files in folder: تحديد عدة ملفات داخل المجلد <br />
-							<span>يتم تحديد الملفات من الخيار Browse</span>
+							<div className="special">
+								<ul className="child-list">
+									تظهر الصفحة التالية: نضغط على الخيار" Add Data" <br />
+								</ul>
+								<div className="image">
+									<img src={ten} alt="ten" />
+								</div>
+							</div>
 						</li>
 						<li>
-							الخيار Unused disk space: لحذف (تنظيف) المساحة الفارغة في أحد الأقراص الصلبة
-							أو وحدة التخزين (فلاش ميموري)
-							<span>
-								يستخدم هذا الخيار، لتدمير الملفات والمجلدات التي تم حذفها بالطريقة
-								التقليدية، قبل تنصيب برنامج "إيريزر"
-							</span>
+							<div className="special">
+								<ul className="child-list">
+									تظهر الصفحة التالية "Select Data to Erase" <br />
+									<li>
+										الخيار File: لتحديد ملف <br />
+										<span>يتم تحديد الملف من الخيار Browse</span>
+									</li>
+									<li>
+										الخيار Files in folder: تحديد عدة ملفات داخل المجلد <br />
+										<span>يتم تحديد الملفات من الخيار Browse</span>
+									</li>
+									<li>
+										الخيار Unused disk space: لحذف (تنظيف) المساحة الفارغة في أحد الأقراص
+										الصلبة أو وحدة التخزين (فلاش ميموري)
+										<span>
+											يستخدم هذا الخيار، لتدمير الملفات والمجلدات التي تم حذفها بالطريقة
+											التقليدية، قبل تنصيب برنامج "إيريزر"
+										</span>
+									</li>
+									<li>
+										خيار Recycle Bin: لحذف الملفات والمجلدات التي داخل "سلة المحذوفات"
+									</li>
+								</ul>
+								<div className="image">
+									<img src={eleven} alt="eleven" />
+								</div>
+							</div>
 						</li>
-						<li>خيار Recycle Bin: لحذف الملفات والمجلدات التي داخل "سلة المحذوفات"</li>
-						بعد تحديد الخيار المناسب.
 						<li>
-							نذهب إلى Erasure method حيث يمكننا تحديد عدد مرات الكتابة فوق الملف أو
-							المجلد
-							<br />
-							<span>
-								عند اختيار أو ترك الخيار "Default" فإنه يتم اعتماد الإعداد التي وضعناها في
-								الاعدادات سابقاً
-							</span>{' '}
-							<br />
-							<img src={twelve} alt="twelve" />
+							<div className="special">
+								<ul className="child-list">
+									بعد تحديد الخيار المناسب. <br />
+									<li>
+										نذهب إلى Erasure method حيث يمكننا تحديد عدد مرات الكتابة فوق الملف أو
+										المجلد
+									</li>
+									<span>
+										عند اختيار أو ترك الخيار "Default" فإنه يتم اعتماد الإعداد التي
+										وضعناها في الاعدادات سابقاً
+									</span>
+									<li>ثم نضغط على خيار "OK"</li>
+								</ul>
+								<div className="image">
+									<img src={twelve} alt="twelve" />
+								</div>
+							</div>
 						</li>
-						<li>ثم نضغط على خيار "OK"</li>
-						<ul className="child-list">
-							<span>في الفقرة "Task Type"</span>
-							<li>Run manually: يتم البدء بعملية الحذف يدوياً</li>
-							<li>Run immediately: يتم البدء بعملية الحذف فوراً</li>
-							<li>Run on restart: يتم البدء بعملية الحذف عند إعادة تشغيل الكمبيوتر</li>
-						</ul>
-						<img src={thirteen} alt="therteen" /> <br />
-						<span>الفقرة "Data to erase" تعرف المهام التي اخترناها</span>
-						<li>بعد الإنتهاء نضغط على الخيار "OK"</li>
-						تظهر الصفحة الرئيسية <br />
-						<img src={fourteen} alt="fourteen" /> <br />
-						إن كنا اخترنا الخيار "Run immediately" فسيتم فوراً البدء بعملية الحذف، كما في
-						الصورة السابقة <br />
-						إن كنا اخترنا الخيار "Run manually" يجب أن نضغط بالزر اليمين على المهمة
-						واختيار الخيار "Run" <br />
-						<span>عند الإنتهاء من مهمة الحذف، تظهر عبارة Completed</span> <br />
-						<img src={fifteen} alt="fifteen" />
+						<li>
+							<div className="special">
+								<ul className="child-list">
+									<span>في الفقرة "Task Type"</span>
+									<li>Run manually: يتم البدء بعملية الحذف يدوياً</li>
+									<li>Run immediately: يتم البدء بعملية الحذف فوراً</li>
+									<li>
+										Run on restart: يتم البدء بعملية الحذف عند إعادة تشغيل الكمبيوتر
+									</li>
+									<span>الفقرة "Data to erase" تعرف المهام التي اخترناها</span>
+									<li>بعد الإنتهاء نضغط على الخيار "OK"</li>
+								</ul>
+								<div className="image">
+									<img src={thirteen} alt="therteen" />
+								</div>
+							</div>
+						</li>
+						<li>
+							تظهر الصفحة الرئيسية <br />
+							<img src={fourteen} alt="fourteen" /> <br />
+							إن كنا اخترنا الخيار "Run immediately" فسيتم فوراً البدء بعملية الحذف، كما
+							في الصورة السابقة <br />
+							إن كنا اخترنا الخيار "Run manually" يجب أن نضغط بالزر اليمين على المهمة
+							واختيار الخيار "Run" <br />
+						</li>
+						<li>
+							<span>عند الإنتهاء من مهمة الحذف، تظهر عبارة Completed</span> <br />
+							<img src={fifteen} alt="fifteen" />
+						</li>
 					</ul>
 					<h3>
 						<a
@@ -339,7 +372,6 @@ const Eraser = () => {
 					</h3>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };

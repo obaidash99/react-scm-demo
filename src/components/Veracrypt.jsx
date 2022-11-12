@@ -3,7 +3,6 @@ import logo from '../assets/veraCryptImgs/vera-logo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Footer from '../components/Footer.js';
 
 import one from '../assets/veraCryptImgs/img1-1.jpg';
 import two from '../assets/veraCryptImgs/img1-2.jpg';
@@ -339,7 +338,6 @@ const Veracrypt = () => {
 					</h3>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };
