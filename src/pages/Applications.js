@@ -84,11 +84,13 @@ const Applications = () => {
 						<img src={jitsi} alt="jitsi" />
 						<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
 					</div>
-					<div className="card">
-						<h4>Zoom - زووم</h4>
-						<img src={zoom} alt="zoom" />
-						<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
-					</div>
+					<Link to="/applications/Zoom">
+						<div className="card">
+							<h4>Zoom - زووم</h4>
+							<img src={zoom} alt="zoom" />
+							<p>منصة تواصل اجتماعي آمن - مكالمات فيديو</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>Other - تطبيقات أخرى</h4>
 						<img src={other} alt="other" />
