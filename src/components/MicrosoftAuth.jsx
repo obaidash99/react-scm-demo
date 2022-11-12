@@ -261,7 +261,7 @@ const MicrosoftAuth = () => {
 							<ul class="child-list">
 								<li>نقوم بلصق الكود في الحقل المخصص له ثم نضغط على "إثبات الصحة"</li>
 							</ul>
-							<img src="./assets/authyImgs/add18.png" alt="add18" />
+							<img src={add18} alt="add18" />
 						</li>
 						<li>
 							الآن تم إضافة خطوة تسجيل ثانية لحساب الـ Gmail، لذلك عند التسجيل من جديد سوف
