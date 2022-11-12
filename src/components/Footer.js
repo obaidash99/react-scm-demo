@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import footerImg from '../assets/veraCryptImgs/image13.jpg';
 
 const Footer = () => {
@@ -14,10 +16,10 @@ const Footer = () => {
 					<div class="footer-content">
 						<ul>
 							<li>
-								<a href="index.html#home">الصفحة الرئيسية</a>
+								<Link to="/applications">الصفحة الرئيسية</Link>
 							</li>
 							<li>
-								<a href="index.html#applications">التطبيقات</a>
+								<Link to="/applications">التطبيقات</Link>
 							</li>
 						</ul>
 					</div>

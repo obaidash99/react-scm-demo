@@ -15,6 +15,7 @@ import Veracrypt from './components/Veracrypt';
 import Eset from './components/Eset';
 import Eraser from './components/Eraser';
 import Bitwarden from './components/Bitwarden.jsx';
+import Authy from './components/Authy.jsx';
 import Zoom from './components/Zoom.jsx';
 import Footer from './components/Footer';
 
@@ -33,6 +34,7 @@ function App() {
 						<Route path="/applications/Veracrypt" element={<Veracrypt />} />
 						<Route path="/applications/Eraser" element={<Eraser />} />
 						<Route path="/applications/Bitwarden" element={<Bitwarden />} />
+						<Route path="/applications/Authy" element={<Authy />} />
 						<Route path="/applications/Zoom" element={<Zoom />} />
 					</Routes>
 					<Footer />

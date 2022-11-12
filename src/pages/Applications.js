@@ -49,11 +49,13 @@ const Applications = () => {
 							<p>إدارة بيانات تسجيل الدخول</p>
 						</div>
 					</Link>
-					<div className="card">
-						<h4>Authy - أوثي</h4>
-						<img src={authy} alt="authy" />
-						<p>التحقق بخطوتين عند تسجيل الدخول</p>
-					</div>
+					<Link to="/applications/Authy">
+						<div className="card">
+							<h4>Authy - أوثي</h4>
+							<img src={authy} alt="authy" />
+							<p>التحقق بخطوتين عند تسجيل الدخول</p>
+						</div>
+					</Link>
 					<div className="card">
 						<h4>Microsoft Authenticator - مايكروسوفت أوثونتكاتور</h4>
 						<img src={microAuth} alt="microsoft-auth" />
