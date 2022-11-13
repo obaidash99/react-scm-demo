@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import logo from '../assets/other.png';
 
 import virus1 from '../assets/otherImgs/virus1.png';
+import virus2 from '../assets/otherImgs/virus2.png';
+import virus3 from '../assets/otherImgs/virus3.png';
+
+import pass1 from '../assets/otherImgs/pass1.png';
 
 const Other = () => {
 	return (
@@ -140,14 +143,49 @@ const Other = () => {
 									هنا
 								</a>{' '}
 							</span>
-							لتظهر الصفحة التالية:
+							لتظهر الصفحة التالية: <br />
+							<img src={virus1} alt="virus1" /> <br />
+							<span>
+								يمكنك تصفح الملفات على جهازك واختيار أحدها ليتم فحصها عن طريق خيار "Choose
+								file"
+							</span>
 						</li>
-						<li></li>
+						<li>
+							عند الضغط على تبويب "URL" يظهر كالتالي: يمكنك نسخ أي رابط تريد فحصه للتأكد
+							من صحته قبل استخدامه <br />
+							<img src={virus2} alt="virus2" />
+						</li>
+						{/* <li>
+							عند الضغط على تبويب "SEARCH" يظهر كالتالي: يمكنك البحث عن اي شيء تريده لتظهر
+							النتائج بشكل آمن
+							<br />
+							<img src={virus3} alt="virus3" />
+						</li> */}
 					</ul>
 				</div>
 
 				<div class="creating" id="passowrd">
 					<h3>2- Password Generator || إنشاء كلمات مرور</h3>
+					<p>
+						يعمل هذ الموقع على إنشاء كلمات مرور معقدة لاستخدامها في تأمين حساباتنا
+						الشخصية،
+					</p>
+					<ul className="child-list">
+						للوصول إلى الموقع نضغط على الرابط{' '}
+						<span>
+							<a
+								href="https://www.nexcess.net/web-tools/secure-password-generator/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								هنا
+							</a>{' '}
+						</span>
+						لتظهر الصفحة التالية:
+						<li>لأنشاء كلمة مرور معقدة مكونة من أحرف كبيرة وصغيرة وأرقام ورموز</li>
+						<li>لإنشاء كلمة مرور مكونة من كلمات يسهل حفظها مع أرقام لتكون معقدة قليلا</li>
+						<img src={pass1} alt="pass1" />
+					</ul>
 				</div>
 			</div>
 		</div>
