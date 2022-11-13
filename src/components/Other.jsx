@@ -4,7 +4,7 @@ import logo from '../assets/other.png';
 
 import virus1 from '../assets/otherImgs/virus1.png';
 import virus2 from '../assets/otherImgs/virus2.png';
-import virus3 from '../assets/otherImgs/virus3.png';
+// import virus3 from '../assets/otherImgs/virus3.png';
 
 import pass1 from '../assets/otherImgs/pass1.png';
 
