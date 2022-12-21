@@ -84,11 +84,12 @@ nav {
 	box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
 	-webkit-box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
 	-moz-box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
-	position: fixed;
+	/* position: fixed; */
 	width: 80%;
-	right: 50%;
-	transform: translateX(50%);
-	z-index: 10;
+	margin: 20px auto;
+	/* right: 50%; */
+	/* transform: translateX(50%); */
+	/* z-index: 10; */
 }
 nav ul li {
 	display: inline-block;
@@ -558,6 +559,8 @@ ul.apps li:hover a {
 }
 .instructions img {
 	width: 60%;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 /* .instructions h3 {
 	margin: 20px;
@@ -756,13 +759,13 @@ ul.apps li:hover a {
 }
 .special .image {
 	flex: 50%;
-	border: 1px solid black;
-	border-radius: 5px;
+	/* border: 1px solid black;
+	border-radius: 5px; */
 	margin-top: 5px;
 }
 .special .image img {
-	height: 100%;
-	width: 100%;
+	height: 500px;
+	width: 300px;
 	border-radius: 5px;
 }
 
