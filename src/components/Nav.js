@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 const Nav = () => {
 	return (
-		<div className="container">
+		<div className="">
 			<nav dir="rtl">
 				<div className="logo">
 					<Link to="/">

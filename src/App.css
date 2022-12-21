@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-	--main-color: #538fcc;
+	--main-color: rgb(83, 143, 204);
 	--main-color-alt: #4372a1;
 	--main-transition-duration: all 0.3s ease;
 	--eraser-color: #7c2b2b;
 	--eraser-color-alt: #cc5353;
+	--shred-color: #81ba4f;
+	--shred-color-alt: #6ea042;
 	--bitwarden-color: #14449c;
 	--bitwarden-color-alt: #175ddc;
 	--authy-color: #ee1b22;
@@ -13,6 +15,7 @@
 	--mailvelope-color-alt: #c90040;
 	--eset-color: #00656b;
 	--eset-color-alt: #00484c;
+	--box-shadow-color: #538fcc66;
 }
 
 * {
@@ -25,7 +28,7 @@ body {
 	font-family: 'Noto Kufi Arabic', sans-serif;
 	overflow-anchor: none;
 	caret-color: var(--main-color);
-	background-color: #eee; /* لازم تشتغل على تغيير لون خلفية الموقع كله وتزبط صورة الفوتر تخليها متل الجديدة وتزبط خليفيات الهيدر والفوتر كمان
+	/* لازم تشتغل على تغيير لون خلفية الموقع كله وتزبط صورة الفوتر تخليها متل الجديدة وتزبط خليفيات الهيدر والفوتر كمان
 وتبدأ على التاسكات الجديدة اللي أخدتها من أيمن بأسرع وقت*/
 }
 ul {
@@ -40,6 +43,7 @@ a {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 170px;
 }
 /* Small */
 /* @media (max-width: 767px) {
@@ -49,19 +53,22 @@ a {
 	}
 } */
 @media (min-width: 768px) {
-	.container {
+	.container,
+	.footer {
 		width: 750px;
 	}
 }
 /* Medium */
 @media (min-width: 992px) {
-	.container {
+	.container,
+	.footer {
 		width: 970px;
 	}
 }
 /* Large */
 @media (min-width: 1200px) {
-	.container {
+	.container,
+	.footer {
 		width: 1170px;
 	}
 }
@@ -70,8 +77,18 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 10px;
-	background-color: #fff;
+	background-color: #eee;
+	padding: 20px 50px;
+	margin-top: 20px;
+	border-radius: 100px;
+	box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
+	-webkit-box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
+	-moz-box-shadow: 0px 0px 20px 0px var(--box-shadow-color);
+	position: fixed;
+	width: 80%;
+	right: 50%;
+	transform: translateX(50%);
+	z-index: 10;
 }
 nav ul li {
 	display: inline-block;
@@ -216,11 +233,15 @@ nav li a:hover {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #eee;
+	background-color: #fff;
 	height: 100%;
 }
 .applications .card:hover {
 	transform: scale(1.05);
+}
+.applications .card-img {
+	max-width: 100%;
+	border-radius: 5px;
 }
 .applications .card h4 {
 	color: var(--main-color-alt);
@@ -233,14 +254,16 @@ nav li a:hover {
 /* Start Footer */
 footer {
 	border-top: 2px solid #eee;
-	margin-top: 30px;
+	margin-top: 130px;
 }
 .footer {
-	padding: 10px 0;
+	padding: 20px 15px;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 30px;
+	/* gap: 30px; */
 }
 .footer .image {
 	width: 50%;
@@ -694,7 +717,34 @@ ul.apps li:hover a {
 	color: var(--eset-color-alt);
 }
 .mailvelope .instructions h3 a:hover {
-	background-color: var(--mailvelope-color-alt);
+	background-color: var(--eset-color-alt);
+	color: white;
+}
+/* Shred Colors */
+.shred h3 {
+	color: var(--shred-color);
+}
+.shred span {
+	color: var(--shred-color-alt);
+}
+.shred .child-list span a {
+	color: var(--shred-color-alt);
+}
+.shred .child-list span a:hover {
+	background-color: var(--shred-color-alt);
+	color: white;
+}
+.shred .instructions .guid ul li:hover {
+	background-color: var(--shred-color-alt);
+}
+.shred .instructions .guid ul li:hover a {
+	color: white;
+}
+.shred .instructions h3 a {
+	color: var(--shred-color-alt);
+}
+.mailvelope .instructions h3 a:hover {
+	background-color: var(--shred-color-alt);
 	color: white;
 }
 

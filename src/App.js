@@ -14,6 +14,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import Veracrypt from './components/Veracrypt';
 import Eset from './components/Eset';
 import Eraser from './components/Eraser';
+import Ishredder from './components/Ishredder';
 import Bitwarden from './components/Bitwarden.jsx';
 import Authy from './components/Authy.jsx';
 import MicrosoftAuth from './components/MicrosoftAuth.jsx';
@@ -40,6 +41,7 @@ function App() {
 						<Route path="/applications/Eset" element={<Eset />} />
 						<Route path="/applications/Veracrypt" element={<Veracrypt />} />
 						<Route path="/applications/Eraser" element={<Eraser />} />
+						<Route path="/applications/Ishredder" element={<Ishredder />} />
 						<Route path="/applications/Bitwarden" element={<Bitwarden />} />
 						<Route path="/applications/Authy" element={<Authy />} />
 						<Route path="/applications/MicrosoftAuth" element={<MicrosoftAuth />} />
