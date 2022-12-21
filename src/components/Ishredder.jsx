@@ -10,6 +10,13 @@ import shred6 from '../assets/ishredderImgs/shred6.jpg';
 import shred7 from '../assets/ishredderImgs/shred7.jpg';
 import shred8 from '../assets/ishredderImgs/shred8.jpg';
 import shred9 from '../assets/ishredderImgs/shred9.jpg';
+import shred10 from '../assets/ishredderImgs/shred10.jpg';
+import shred11 from '../assets/ishredderImgs/shred11.jpg';
+import shred12 from '../assets/ishredderImgs/shred12.jpg';
+import shred13 from '../assets/ishredderImgs/shred13.jpg';
+import shred14 from '../assets/ishredderImgs/shred14.jpg';
+import shred15 from '../assets/ishredderImgs/shred15.jpg';
+import shred16 from '../assets/ishredderImgs/shred16.jpg';
 
 const Ishredder = () => {
 	return (
@@ -155,8 +162,8 @@ const Ishredder = () => {
 								</li>
 								<li>
 									<div className="special">
-										بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية <br />
-										نضغط على "Next" <br />
+										بعد تحميل التطبيق على الجهاز، وتشغيله، تظهر النافذة التالية نضغط على
+										"Skip" <br />
 										<div className="image">
 											<img src={shred1} alt="one" />
 										</div>
@@ -165,13 +172,155 @@ const Ishredder = () => {
 							</ul>
 						</li>
 						<li>
-							<span>
-								نضغط على المربع بجانب عبارة "I accept the terms in the license Agreement"
-								لتظهر اشارة [㇢]
-							</span>
-							<br />
-							ثم نضغط على الخيار Next <br />
-							<img alt="two" /> <br />
+							تظهر الصفحة التالية:
+							<div className="special">
+								<ul className="child-list">
+									<li>
+										لرؤية المساحة الفارغة المتاحة على الهاتف المحمول، والتي يوفر التطبيق
+										إمكانية الكتابة فوقها بحيث يستحيل بعدها استعادة أي بيانات سابقة
+									</li>
+									<li>
+										يتيح إمكانية تصفح جميع ملفات الهاتف المحمول ثم حذفها بطريقة آمنة
+									</li>
+								</ul>
+								<div className="image">
+									<img src={shred2} alt="two" /> <br />
+								</div>
+							</div>
+						</li>
+						<li>
+							عند الضغط على أي من الخيارين السابقين تظهر النافذة التالية:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										وهي للسماح لتطبيق آي شريدير بالوصول إلى ملفات الهاتف المحمول وجهات
+										الاتصال ليستطيع حذفها بشكل آمن
+									</li>
+									<li>
+										نضغط على "PERMIT" ليتم تحويلنا إلى الصفحة التالية "في الخطوة التالية"
+									</li>
+								</ul>
+								<div className="image">
+									<img src={shred3} alt="three" />
+								</div>
+							</div>
+						</li>
+						<li>
+							بعد الضغط على "PERMIT" يتم تحويلنا إلى الإعدادات:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										نبحث عن تطبيق آي شريدير "iShredder" ونتأكد من تفعيل الخيار بجانبه بحيث
+										يكون باللون الأزرق كما هو في الصورة
+									</li>
+									<li>نعود إلى التطبيق ونضغط على "PERMIT" مرة أخرى </li>
+								</ul>
+								<div className="image">
+									<img src={shred4} alt="four" />
+								</div>
+							</div>
+						</li>
+						<li>
+							نضغط على "PERMIT" مرة أخرى لتظهر النافذة التالية:
+							<div className="special">
+								<ul className="shild-list">
+									<li>نضغط على "سماح" لنعطي للتطبيق صلاحية الوصول إلى جهات الاتصال</li>
+								</ul>
+								<div className="image">
+									<img src={shred5} alt="five" />
+								</div>
+							</div>
+						</li>
+						<li>
+							نضغط على أحد الخيارين الرئيسين:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										"Selective erasing": لرؤية المساحة الفارغة المتاحة على الهاتف المحمول،
+										والتي يوفر التطبيق إمكانية الكتابة فوقها بحيث يستحيل بعدها استعادة أي
+										بيانات سابقة
+									</li>
+									<li>
+										"File Explorer": يتيح إمكانية تصفح جميع ملفات الهاتف المحمول ثم حذفها
+										بطريقة آمنة
+									</li>
+								</ul>
+								<div className="image">
+									<img src={shred2} alt="two" />
+								</div>
+							</div>
+						</li>
+						<li>
+							نضغط على الخيار "Selective erasing" لتظهر الصفحة التالية:
+							<div className="special">
+								<ul className="shild-list">
+									<li>نقوم بتحديد الخيارات المتاحة والتي نريد حذفها بشكل آمن</li>
+								</ul>
+								<div className="image">
+									<img src={shred6} alt="six" />
+								</div>
+							</div>
+						</li>
+						<li>
+							بعد الضغط على "SELECT DATA" في الصورة السابقة، تظهر الصفحة التالية:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										نقوم بتحديد خوارزمية الحذف والكتابة فوق الملفات ليتم حذفها بطريقة
+										آمنة، من الأفضل أن نختار الخيار "Random"
+									</li>
+								</ul>
+								<div className="image">
+									<img src={shred7} alt="seven" />
+								</div>
+							</div>
+						</li>
+						<li>
+							بعد اختيار آلية أو خوارزمية الحذف الآمن، نضغط على "SELECT A METHOD" في
+							الصورة السابقة لتظهر النافذة التالية:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										نقوم بوضع علامة الصح ✓ لتأكيد الحذف الآمن، بحيث لن يمكن استعادة هذه
+										الملفات، أو الملفات السابقة والتي سبق حذفها بشكل آمن.
+									</li>
+									<li>نضغط على "SHRED" وتعني بدأ الحذف أو الإتلاف</li>
+								</ul>
+								<div className="image">
+									<img src={shred8} alt="eight" />
+								</div>
+							</div>
+						</li>
+						<li>
+							تظهر الصفحة التالية ويظهر فيها عداد أو مؤشر على عملية الحذف، تستغرق بعض
+							الوقت بحسب حجم الملفات التي تم اختيارها
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										في حال أردنا إيقاف عملية الحذف لأي سبب كان، نضغط على "STOP" أسفل
+										الشاشة، لتظهر نافذة تسأل عن تأكيد إيقاف عملية الحذف، نضغط على "OK"
+										لإيقاف الحذف
+									</li>
+								</ul>
+								<div className="image">
+									<img src={shred9} alt="nine" />
+								</div>
+							</div>
+						</li>
+						<li>
+							عند اكتمال الحذف، تظهر الصفحة التالية، وتحتوي على تقرير الحذف:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										ويحتوي التقرير على معلومات الوقت والتاريخ الخاص بعملية الحذف، طريقة
+										الحذف والخورازيمة المستخدمة وغيرها من المعلومات
+									</li>
+									<li>نضغط على "GO HOME" للعودة إلى الصفحة الرئيسية للتطبيق</li>
+								</ul>
+								<div className="image">
+									<img src={shred10} alt="ten" />
+								</div>
+							</div>
 						</li>
 						<li>
 							{' '}
