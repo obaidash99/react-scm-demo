@@ -266,6 +266,7 @@ const Ishredder = () => {
 							<div className="special">
 								<ul className="shild-list">
 									<li>نقوم بتحديد الخيارات المتاحة والتي نريد حذفها بشكل آمن</li>
+									<li>نضغط على "SELECT DATA" ليتم نقلنا إلى الخطوة التالية</li>
 								</ul>
 								<div className="image">
 									<img src={shred6} alt="six" />
@@ -359,7 +360,7 @@ const Ishredder = () => {
 							</div>
 						</li>
 						<li>
-							نقوم بالضغط على الخيار "File Explorer" لتضفح ملفات الهاتف المحمول، تظهر
+							نقوم بالضغط على الخيار "File Explorer" لتصفح ملفات الهاتف المحمول، تظهر
 							الصفحة التالية:
 							<div className="special">
 								<ul className="child-list">
@@ -397,8 +398,8 @@ const Ishredder = () => {
 							<div className="special">
 								<ul className="child-list">
 									<li>
-										نقوم باختيار الملف الصوتي الذي نريد حذفه ونضغط عليه حتى يظهر خيار
-										الحذف كصورة صغيرة أعلى يمين الشاشة
+										نقوم باختيار الملف الصوتي الذي نريد حذفه ونضغط عليه لمدة طويلة حتى
+										يظهر خيار الحذف كصورة صغيرة أعلى يمين الشاشة
 									</li>
 								</ul>
 								<div className="image">
@@ -449,6 +450,21 @@ const Ishredder = () => {
 								</ul>
 								<div className="image">
 									<img src={shred16} alt="sixteen" />
+								</div>
+							</div>
+						</li>
+						<li>
+							عند اكتمال الحذف، تظهر الصفحة التالية، وتحتوي على تقرير الحذف:
+							<div className="special">
+								<ul className="shild-list">
+									<li>
+										ويحتوي التقرير على معلومات الوقت والتاريخ الخاص بعملية الحذف، طريقة
+										الحذف والخورازيمة المستخدمة وغيرها من المعلومات
+									</li>
+									<li>نضغط على "GO HOME" للعودة إلى الصفحة الرئيسية للتطبيق</li>
+								</ul>
+								<div className="image">
+									<img src={shred10} alt="ten" />
 								</div>
 							</div>
 						</li>
