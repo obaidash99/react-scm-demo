@@ -70,7 +70,7 @@ const Workspace = () => {
 					</div>
 				</div>
 
-				<div class="content content-2 info" id="gmail">
+				<div class="content content-2 info gmail" id="gmail">
 					<h3>
 						خدمة جيميل أو البريد الإلكتروني{' '}
 						<a
@@ -110,7 +110,7 @@ const Workspace = () => {
 					</ul>
 				</div>
 
-				<div class="content content-2 info" id="calender">
+				<div class="content content-2 info calender" id="calender">
 					<h3>
 						خدمة التقويم من جوجل{' '}
 						<a
@@ -167,7 +167,7 @@ const Workspace = () => {
 					</ul>
 				</div>
 
-				<div class="content content-2 info" id="meet">
+				<div class="content content-2 info meet" id="meet">
 					<h3>
 						خدمة الاتصال ومكالمات الفيديو من جوجل{' '}
 						<a
@@ -224,7 +224,7 @@ const Workspace = () => {
 					</ul>
 				</div>
 
-				<div class="content content-2 info" id="drive">
+				<div class="content content-2 info drive" id="drive">
 					<h3>
 						خدمة إدارة الملفات من جوجل{' '}
 						<a
@@ -310,7 +310,7 @@ const Workspace = () => {
 					</ul>
 				</div>
 
-				<div class="content content-2 info" id="chat">
+				<div class="content content-2 info chat" id="chat">
 					<h3>
 						خدمة المحادثات أو الشات من جوجل{' '}
 						<a href=" https://mail.google.com/chat/u/0/#chat/welcome" target="_blank">

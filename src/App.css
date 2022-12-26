@@ -796,7 +796,19 @@ ul.apps li:hover a {
 }
 
 @media (max-width: 767px) {
+	.special {
+		flex-direction: column;
+	}
 	.special .image {
 		flex: 70%;
 	}
+}
+
+.gmail img,
+.calender img,
+.meet img,
+.drive img,
+.chat img {
+	border-radius: 5px;
+	border: 1px solid black;
 }
