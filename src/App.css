@@ -91,9 +91,14 @@ nav {
 	/* transform: translateX(50%); */
 	/* z-index: 10; */
 }
+nav ul {
+	display: flex;
+	flex: 50%;
+	justify-content: end;
+}
 nav ul li {
 	display: inline-block;
-	margin-right: 50px;
+	margin-right: 10px;
 }
 nav li a {
 	color: var(--main-color);
@@ -107,17 +112,16 @@ nav li a:hover {
 	color: white;
 	background-color: var(--main-color);
 }
-@media (max-width: 767px) {
+@media (max-width: 825px) {
 	nav {
 		padding-bottom: 20px;
 		flex-direction: column;
-		box-shadow: 0 0 10px #ddd;
+		width: 90%;
+		border-radius: 20px;
 	}
 	nav ul {
-		width: 70%;
+		width: 100%;
 		margin-top: 20px;
-
-		display: flex;
 	}
 	nav ul li {
 		margin: auto;
@@ -126,6 +130,7 @@ nav li a:hover {
 		padding: 5px;
 	}
 }
+
 .logo {
 	width: 320px;
 }
@@ -133,6 +138,22 @@ nav li a:hover {
 	width: 100%;
 }
 
+@media (max-width: 380px) {
+	nav ul {
+		flex-direction: column;
+	}
+	nav ul li:last-child {
+		margin-top: 20px;
+	}
+	.logo {
+		width: 100%;
+		margin: auto;
+	}
+	.logo img {
+		width: 100%;
+		margin: auto;
+	}
+}
 /* Start Home */
 .home {
 	padding-top: 50px;
@@ -254,8 +275,9 @@ nav li a:hover {
 }
 /* Start Footer */
 footer {
-	border-top: 2px solid #eee;
+	/* border-top: 2px solid #eee; */
 	margin-top: 130px;
+	padding-top: 130px;
 }
 .footer {
 	padding: 20px 15px;
@@ -312,10 +334,10 @@ footer .copy-right p {
 }
 /* Responsive Footer */
 @media screen and (max-width: 767px) {
-	/* .footer {
+	.footer {
 		flex-direction: column-reverse;
 		justify-content: center;
-	} */
+	}
 	.footer .image {
 		width: 100%;
 	}
